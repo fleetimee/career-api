@@ -15,6 +15,7 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
+        "base64url": "^3.0.1",
         "bcrypt": "^5.1.1",
         "body-parser": "^1.20.2",
         "cookie": "^0.5.0",

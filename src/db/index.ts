@@ -12,6 +12,9 @@ const pg = postgres({
     database: DB_DATABASE,
     ssl: DB_SSL,
     max: DB_MAX_CONNECTIONS,
+    onnotice: () => {
+        // console.log('NOTICE:', message);
+    },
 });
 
 const db = drizzle(pg);
